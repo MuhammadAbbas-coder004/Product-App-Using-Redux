@@ -28,9 +28,9 @@ function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   
-  // Redux se cart items count lo
+ 
   const cart = useSelector(state => state.cart.cart);
-  // Total unique items count (kitne alag products hain)
+ 
   const cartItemsCount = cart.length;
 
   const handleOpenNavMenu = (event) => { setAnchorElNav(event.currentTarget); };
@@ -130,7 +130,7 @@ function Navbar() {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar 
                   alt="User" 
-                  src="https://i.pravatar.cc/150?img=12" 
+                  src="https://i.pinimg.com/736x/36/b1/3f/36b13f53eb9c2990b5ee3402fe97094e.jpg" 
                   sx={{ 
                     border: '2px solid white', 
                     '&:hover': { transform: 'scale(1.1)', transition: '0.3s' } 
