@@ -11,14 +11,14 @@ const cartSlice = createSlice({
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
-        state.cart.push({ ...action.payload, quantity: 1 }); // first add
+        state.cart.push({ ...action.payload, quantity: 1 });
       }
     },
     decreaseProduct: (state, action) => {
       const existingItem = state.cart.find(item => item.id === action.payload);
       if (existingItem && existingItem.quantity > 0) {
-        existingItem.quantity -= 1; // decrease
-        if (existingItem.quantity < 0) existingItem.quantity = 0; // never negative
+        existingItem.quantity -= 1;
+        if (existingItem.quantity < 0) existingItem.quantity = 0;
       }
     },
     removeProduct: (state, action) => {
