@@ -8,15 +8,14 @@ import Cart from "./components/pages/Cart.jsx";
 function App() {
   return (
    <>
-    <BrowserRouter>
-  
+       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/contect" element={<Contect />} />
-        </Routes>
-    </BrowserRouter>
+          </Routes>
+         </BrowserRouter>
    
    </>
   );
