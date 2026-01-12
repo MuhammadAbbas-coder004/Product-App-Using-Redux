@@ -40,8 +40,7 @@ export default function App() {
         p: { xs: 1, sm: 2 }
       }}
     >
-      {/* 3D iPhone */}
-      <Box
+        <Box
         sx={{
           width: { xs: "95%", sm: 360 },
           maxWidth: 360,
